@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asheransari.broadcastreceiver2.MainActivity">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:textSize="22sp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/text"
+    android:textStyle="bold"
+    android:textColor="#898989"
+    android:layout_margin="15dp"
+    android:text="Example of BroadCast Receiver"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:id="@+id/text2"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textColor="#898989"
+        android:layout_centerInParent="true"
+        android:text="com.example.asheransari.broadcastreceiver2"
+        android:layout_above="@+id/btn"
+
+/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="BroadCast Intent"
+    android:onClick="broadCastIntent"
+    android:id="@+id/btn"/>
+</RelativeLayout>
